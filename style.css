@@ -1,0 +1,13 @@
+#HUD nav #NavBar ul li{
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 20px;
+    width: 250px;
+    padding-top: 20px;
+}
+
+#HUD nav #NavBar ul li img{
+    height:25px;
+    width: 25x;
+
+}
