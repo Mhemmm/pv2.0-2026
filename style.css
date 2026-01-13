@@ -181,7 +181,7 @@
 
 }
 
-.SearchDisplayer img  {
+#ResourceDisplayBox img  {
     height: 125px;
     width: 125px;
 }
@@ -189,6 +189,8 @@
 .FilterOptions{
     background-color: rgb(237, 237, 237);
     width: 25%;
+    position: relative;
+    z-index: 1020;
 
 }
 
@@ -202,14 +204,14 @@
     padding: 1rem;
 }
 
-
-
-
-#ViktigaProv img{
-    height: 10%;
-    width: 10%;
-
+.FilterOptions img {
+    height: 25px;
+    width: 25px;
 }
+
+
+
+
 
 #ViktigaProv {
     background-color: #666; 
@@ -222,6 +224,7 @@
 #ViktigaProv ul li {
     text-align: center;
     display: inline-block;
+    background-color: #ffffff;
     
 }
 
