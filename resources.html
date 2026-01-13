@@ -18,11 +18,11 @@
                 <ul class="nav-left">
 
                     <li class="dropdown">
-                        <a href="javascript:void(0)" id="subjectsBtn">
+                        <a href="javascript:void(0)" class="dropdown-toggle">
                             <img src="https://static.thenounproject.com/png/2471526-200.png" alt="Subjects">
                         </a>
 
-                        <div class="dropdown-menu" id="subjectsMenu">
+                        <div class="dropdown-menu">
                             <button class="close-btn">▲</button>
 
                             <a href="subjects/matte.html">Matte</a>
@@ -48,37 +48,71 @@
 
         </nav>
     </section>
-
+    
     <section class="SearchDisplayer">
-        <div class="SearchOptions">
-            <button>Filter</button> 
-            <li class="dropdown">
-                        <a href="javascript:void(0)" id="subjectsBtn">
-                            <img src="https://static.thenounproject.com/png/2471526-200.png" alt="Subjects">
-                        </a>
+        <div class="FilterOptions">
+            <ul>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropdown-toggle">
+                        <img src="https://www.freeiconspng.com/uploads/filter-icon-0.png" alt="Filter">
+                    </a>
 
-                        <div class="dropdown-menu" id="subjectsMenu">
-                            <button class="close-btn">▲</button>
-
-                            <a href="subjects/matte.html">Matte</a>
-                            <a href="subjects/engelska.html">Engelska</a>
-                            <a href="subjects/svenska.html">Svenska</a>
-                            <a href="subjects/fysik.html">Fysik</a>
-                        </div>
-                    </li>
+                    <div class="dropdown-menu">
+                        <button class="close-btn">▲</button>
+                        <a href="#Swedish">Svenska</a>
+                        <a href="#Maths">Matte</a>
+                        <a href="#Physics">Fysik</a>
+                    </div>
+                </li>
+            </ul>
         </div>
-        <ul id="SwedishCategory">
-                <li><a href="https://inlasta.ilteducation.se/books/1DLRgtRv6L9hN0tygBWvl"><img src="https://content.global.prod.ilteducation.com/bookCovers/1DLRgtRv6L9hN0tygBWvl/cover.png"></a></li>
-                <li><a href="https://inlasta.ilteducation.se/books/D4jRljDKMkY3N2V8OL9ID"><img src="https://img.campusbokhandeln.se/-Yr3gvzdrZlMQQB2mac04oZ2C_bC8HXKvTzzb3oHfrk/s:600:0:1/enlarge:0/czM6Ly9jYi1wdWJsaWMvaW1hZ2VzL2Jvb2tzLzk3ODkxOTgwMjQ3OTEuanBn"></a></li>
-        </ul>
+    
+        <div id="ResourceDisplayBox">
 
-        <ul id="mathsCategory">
-                <li><a href="https://inlasta.ilteducation.se/books/KkGcEHt7NfNM1ZZCb14k6"><img src="https://content.global.prod.ilteducation.com/bookCovers/KkGcEHt7NfNM1ZZCb14k6/cover.png"></a></li>
-                <li><a href="https://inlasta.ilteducation.se/books/0FjW8qy1xzUEGDrr7t0qK"><img src="https://content.global.prod.ilteducation.com/bookCovers/0FjW8qy1xzUEGDrr7t0qK/cover.png"></a></li>
-        </ul>
+            <header id="Swedish">Svenska</header>
+            <ul id="SwedishResources">
+                <li>
+                    <a href="https://inlasta.ilteducation.se/books/1DLRgtRv6L9hN0tygBWvl"><img src="https://content.global.prod.ilteducation.com/bookCovers/1DLRgtRv6L9hN0tygBWvl/cover.png"></a>
+                    <a href="https://inlasta.ilteducation.se/books/D4jRljDKMkY3N2V8OL9ID"><img src="https://img.campusbokhandeln.se/-Yr3gvzdrZlMQQB2mac04oZ2C_bC8HXKvTzzb3oHfrk/s:600:0:1/enlarge:0/czM6Ly9jYi1wdWJsaWMvaW1hZ2VzL2Jvb2tzLzk3ODkxOTgwMjQ3OTEuanBn"></a>
+                </li>
+            </ul>
+
+            <header id="Maths">Matte</header>
+            <ul id="MathsResources">
+                    <li>
+                        <a href="https://inlasta.ilteducation.se/books/KkGcEHt7NfNM1ZZCb14k6"><img src="https://content.global.prod.ilteducation.com/bookCovers/KkGcEHt7NfNM1ZZCb14k6/cover.png"></a>
+                        <a href="https://inlasta.ilteducation.se/books/0FjW8qy1xzUEGDrr7t0qK"><img src="https://content.global.prod.ilteducation.com/bookCovers/0FjW8qy1xzUEGDrr7t0qK/cover.png"></a>
+                        <a href="https://inlasta.ilteducation.se/books/FcP2IhGUBCBLhNf5pEIG5"><img src="https://content.global.prod.ilteducation.com/bookCovers/FcP2IhGUBCBLhNf5pEIG5/cover.png"></a>
+                        <a href="https://inlasta.ilteducation.se/books/ylxi6X6yLfpf1EqNyOlHM"><img src="https://content.global.prod.ilteducation.com/bookCovers/ylxi6X6yLfpf1EqNyOlHM/cover.png"></a>
+                    </li>
+
+            </ul>
+
+
+            <header id="Physics">Fysik</header>
+            <ul id="PhysicsResources">
+                    <li>
+                        <a href="https://inlasta.ilteducation.se/books/GgrhQkLE2TOTyBE4PY0HQ"><img src="https://content.global.prod.ilteducation.com/bookCovers/GgrhQkLE2TOTyBE4PY0HQ/cover.png"></a>
+                        <a href="https://inlasta.ilteducation.se/books/MKWhyl2ixOHwLJ9iERMhN"><img src="https://content.global.prod.ilteducation.com/bookCovers/MKWhyl2ixOHwLJ9iERMhN/cover.png"></a>
+                    </li>
+            </ul>
+
+        </div>
+
 
     </section>
 
+    <section id="ViktigaProv">
+        <ul>
+            <li>
+                <a href="https://www.umu.se/institutionen-for-tillampad-utbildningsvetenskap/np/np-2-4/tidigare-givna-prov/"><img src="https://www.umu.se/globalassets/qbank/np_puff.jpg" alt=""></a>
+                <a href="https://www.umu.se/institutionen-for-tillampad-utbildningsvetenskap/np/np-2-4/tidigare-givna-prov/"><img src="https://www.umu.se/globalassets/qbank/np_puff.jpg" alt=""></a>
+                <a href="https://www.umu.se/institutionen-for-tillampad-utbildningsvetenskap/np/np-2-4/tidigare-givna-prov/"><img src="https://www.umu.se/globalassets/qbank/np_puff.jpg" alt=""></a>
+
+            </li>
+        </ul> 
+
+    </section>
 
 
 

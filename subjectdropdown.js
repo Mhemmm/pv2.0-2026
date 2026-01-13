@@ -1,20 +1,44 @@
 console.log("JS LOADED");
+console.log("Dropdowns found:", document.querySelectorAll(".dropdown"));
 
+document.addEventListener("DOMContentLoaded", () => {
 
-const btn = document.getElementById("subjectsBtn");
-const menu = document.getElementById("subjectsMenu");
-const closeBtn = menu.querySelector(".close-btn");
+    const dropdowns = document.querySelectorAll(".dropdown");
+    console.log("Dropdowns found:", dropdowns);
 
-btn.addEventListener("click", () => {
-    menu.style.display = menu.style.display === "block" ? "none" : "block";
+    dropdowns.forEach(dropdown => {
+        const toggle = dropdown.querySelector(".dropdown-toggle");
+        const menu = dropdown.querySelector(".dropdown-menu");
+        const closeBtn = dropdown.querySelector(".close-btn");
+
+        toggle.addEventListener("click", (e) => {
+            e.stopPropagation();
+
+            dropdowns.forEach(d => {
+                if (d !== dropdown) {
+                    d.classList.remove("open");
+                    d.querySelector(".dropdown-menu").style.display = "none";
+                }
+            });
+
+            const isOpen = dropdown.classList.contains("open");
+
+            dropdown.classList.toggle("open", !isOpen);
+            menu.style.display = isOpen ? "none" : "block";
+        });
+
+        closeBtn.addEventListener("click", () => {
+            dropdown.classList.remove("open");
+            menu.style.display = "none";
+        });
+    });
+
+    document.addEventListener("click", () => {
+        dropdowns.forEach(dropdown => {
+            dropdown.classList.remove("open");
+            dropdown.querySelector(".dropdown-menu").style.display = "none";
+        });
+    });
+
 });
 
-closeBtn.addEventListener("click", () => {
-    menu.style.display = "none";
-});
-
-document.addEventListener("click", (e) => {
-    if (!btn.contains(e.target) && !menu.contains(e.target)) {
-        menu.style.display = "none";
-    }
-});

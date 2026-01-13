@@ -61,6 +61,12 @@
     border: 2px solid #1e90ff;
 }
 
+.nav-left li.active img  {
+    width: 35px;
+    height: 35px;
+}
+
+
 .nav-right {
     margin-left: auto;
     display: flex;
@@ -92,7 +98,10 @@
 
 
 
-
+.FilterOptions {
+    position: relative;
+    z-index: 100;
+}
 
 
 
@@ -148,6 +157,74 @@
     cursor: pointer;
     color: #555;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+.SearchDisplayer {
+    background-color: #b9b9b9;
+    margin-top: 2%;
+    height: 50vh; /* stays 50% of the viewport height */ 
+    width: 100%; /* or whatever width you want */ 
+    overflow: hidden; /* prevents the outer box from scrolling */ 
+    border: 1px solid #ccc;
+    border-radius: 2%;
+
+}
+
+.SearchDisplayer img  {
+    height: 125px;
+    width: 125px;
+}
+
+.FilterOptions{
+    background-color: rgb(237, 237, 237);
+    width: 25%;
+
+}
+
+#ResourceDisplayBox {
+    background-color: #7b7b7b;
+    justify-content: center; 
+
+
+    height: 100%; 
+    overflow-y: auto; /* enables vertical scrolling inside */ 
+    padding: 1rem;
+}
+
+
+
+
+#ViktigaProv img{
+    height: 10%;
+    width: 10%;
+
+}
+
+#ViktigaProv {
+    background-color: #666; 
+    position: fixed; 
+    bottom: 0; left: 0; 
+    width: 100%; /* optional, makes it full width */
+    height: 20vh; /* makes it 20% of the screen height */
+}
+
+#ViktigaProv ul li {
+    text-align: center;
+    display: inline-block;
+    
+}
+
 
 
 
