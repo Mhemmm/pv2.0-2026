@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Grid</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <section id="HUD">
+        <nav id="NavBar">
+            <div class="nav-inner">
+                <ul class="nav-left">
+
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropdown-toggle">
+                            <img src="https://static.thenounproject.com/png/2471526-200.png" alt="Subjects">
+                        </a>
+
+                        <div class="dropdown-menu">
+                            <button class="close-btn">▲</button>
+
+                            <a href="subjects/matte.html">Matte</a>
+                            <a href="subjects/engelska.html">Engelska</a>
+                            <a href="subjects/svenska.html">Svenska</a>
+                            <a href="subjects/fysik.html">Fysik</a>
+                        </div>
+                    </li>
+
+                    <li><a href="statestic.html"><img src="https://icons.veryicon.com/png/o/miscellaneous/linear-icon-45/statistics-80.png"></a></li>
+                    <li><a href="leaderboard.html"><img src="https://cdn-icons-png.flaticon.com/512/8088/8088831.png"></a></li>
+                    <li><a href="index.html"> <img src="https://www.svgrepo.com/show/376527/home-line.svg"></a></li>
+                    <li class="active"><a href="library.html"><img src="https://cdn-icons-png.flaticon.com/512/29/29302.png"></a></li>
+                    <li><a href="resources.html"><img src="https://icons.veryicon.com/png/o/miscellaneous/comprehensive-coarse-linear-icon-based-on-40/resources-213.png"></a></li>
+                    <li><a href="#"><img src="https://cdn-icons-png.flaticon.com/512/14/14558.png"></a></li>
+                </ul>
+            </div>
+
+            <ul class="nav-right">
+                <li class="profile">M</li>
+                <li><a href="login.html"><img src="https://cdn-icons-png.flaticon.com/512/126/126467.png"></a></li>
+            </ul>
+
+        </nav>
+    </section>
+
+    <section id="LibraryNav">
+        <ul>
+
+            <li><section id="Searchbar">
+                <input id="SearchInput" type="text" name="Sökfällte" placeholder="sök" required autofocus>
+                <img src="https://www.freeiconspng.com/uploads/search-icon-png-0.png" alt="SökIcon">
+                </section></li>
+
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropdown-toggle">
+                    <img src="https://www.freeiconspng.com/uploads/filter-icon-0.png" alt="Filter">
+                </a>
+
+                <div class="dropdown-menu">
+                    <button class="close-btn">▲</button>
+                    <a href="#Swedish">Svenska</a>
+                    <a href="#Maths">Matte</a>
+                    <a href="#Physics">Fysik</a>
+                </div>
+            </li>
+
+            <li><p>Böcker</p></li>
+
+            <li><p>Bibloteken</p></li>
+
+            <li><p>Bokhyllan</p></li>
+
+
+            
+        </ul>
+    </section>
+
+
+    <section id="BookShelfDisplay">
+        hekko
+        <ul>
+            <li>
+                <div class="BookCardTemplate">
+                    <a href="https://inlasta.ilteducation.se/books/wIVGAiGVJvQSqDpM6Sv9T"><img src="https://content.global.prod.ilteducation.com/bookCovers/wIVGAiGVJvQSqDpM6Sv9T/cover.png" alt="bookbild"></a>
+                    <footer class="BookName">Vampyrspanarna</footer> <img src="https://www.citypng.com/public/uploads/small/11639609700adr8oezftyzrqr8lhzj8grcvyzlrje7f4pls6seuo32auctlnebpkieixy17191a21ybfkrry6yejsbevdah18of7mkxp8b8dpky.png" alt="addbookimage" class="addbutton">
+                </div>
+            </li>
+
+            <li>
+                <div class="BookCardTemplate">
+                    <a href="https://inlasta.ilteducation.se/books/wIVGAiGVJvQSqDpM6Sv9T"><img src="https://content.global.prod.ilteducation.com/bookCovers/wIVGAiGVJvQSqDpM6Sv9T/cover.png" alt="bookbild"></a>
+                    <footer class="BookName">Vampyrspanarna</footer> <img src="https://www.citypng.com/public/uploads/small/11639609700adr8oezftyzrqr8lhzj8grcvyzlrje7f4pls6seuo32auctlnebpkieixy17191a21ybfkrry6yejsbevdah18of7mkxp8b8dpky.png" alt="addbookimage" class="addbutton">
+                </div>
+            </li>
+
+
+        </ul>
+    </section>
+    
+    <script src="subjectdropdown.js"></script>
+
+</body>
+
+</html>
