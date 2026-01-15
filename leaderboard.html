@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Grid</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <section id="HUD">
+        <nav id="NavBar">
+            <div class="nav-inner">
+                <ul class="nav-left">
+
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropdown-toggle">
+                            <img src="https://static.thenounproject.com/png/2471526-200.png" alt="Subjects">
+                        </a>
+
+                        <div class="dropdown-menu">
+                            <button class="close-btn">▲</button>
+
+                            <a href="matte.html">Matte</a>
+                            <a href="engelska.html">Engelska</a>
+                            <a href="svenska.html">Svenska</a>
+                            <a href="fysik.html">Fysik</a>
+                        </div>
+                    </li>
+
+                    <li><a href="statestic.html"><img src="https://icons.veryicon.com/png/o/miscellaneous/linear-icon-45/statistics-80.png"></a></li>
+                    <li class="active"><a href="leaderboard.html"><img src="https://cdn-icons-png.flaticon.com/512/8088/8088831.png"></a></li>
+                    <li><a href="index.html"> <img src="https://www.svgrepo.com/show/376527/home-line.svg"></a></li>
+                    <li><a href="library.html"><img src="https://cdn-icons-png.flaticon.com/512/29/29302.png"></a></li>
+                    <li><a href="resources.html"><img src="https://icons.veryicon.com/png/o/miscellaneous/comprehensive-coarse-linear-icon-based-on-40/resources-213.png"></a></li>
+
+
+
+                    <li class="dropdown chat-dropdown">
+                        <a href="javascript:void(0)" class="chatdropdown-toggle">
+                            <img src="https://cdn-icons-png.flaticon.com/512/14/14558.png" alt="Chat">
+                        </a>
+
+                        <div class="chat-panel">
+                            <div class="chat-header">
+                                <span>AI Assistant</span>
+                                <button class="chatclose-btn">✕</button>
+                            </div>
+
+                            <div class="chat-messages" id="chatMessages">
+                                <!-- Messages will appear here -->
+                            </div>
+
+                            <div class="chat-input">
+                                <input type="text" id="chatInput" placeholder="Ask something..." />
+                                <button id="sendBtn">➤</button>
+                            </div>
+                        </div>
+                    </li>
+
+
+                </ul>
+            </div>
+
+            <ul class="nav-right">
+                <li class="profile">M</li>
+                <li><a href="login.html"><img src="https://cdn-icons-png.flaticon.com/512/126/126467.png"></a></li>
+            </ul>
+
+        </nav>
+    </section>
+
+    <sectionc class="ComingSoon" >
+        <img src="https://static.vecteezy.com/system/resources/previews/021/013/504/original/coming-soon-icon-symbol-coming-soon-icon-symbol-illustration-on-transparent-background-free-png.png" alt="coming soon">
+    </section>
+
+
+
+    <script src="subjectdropdown.js"></script>
+    <script src="chatdropdown.js"></script>
+
+</body>
+
+</html>
