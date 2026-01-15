@@ -14,24 +14,19 @@ Grupp 2 = ["Makarios A-k",
 
 ## Projekt & Teknisk- beskrivning :
 
-Ett hub plats där alla nödvändiga resurser och hjälpmedek är tillgängligt. Med hjälp av ai så kan du öva på massvis olika problem och till och med testa dina förmågor.
+Projektet är en webbplats som är skapad för att hjälpa användare i sina studier genom att samla resurser och digitala verktyg på ett ställe. Webbplatsen innehåller ett digitalt bibliotek där användaren kan söka och filtrera böcker efter olika teman, vilket gör det enkelt att hitta relevant studiematerial.
 
-Framtida mål inom projecten är att kunna implementera ett spel känsla där du tjänar på att besvara frågor och kan tävla inom olika kategorier.
+Utöver detta finns en AI-chatt som användaren kan använda för att ställa frågor och få hjälp med olika ämnen. Det finns även en AI-funktion som ställer frågor till användaren och ger direkt feedback på svaren, vilket gör lärandet mer interaktivt och effektivt.
 
-Vi har fokuserat på det allmäna när det kommer till plugget.
+Genom att kombinera traditionella studieresurser med modern AI-teknik skapar projektet en lättanvänd och engagerande plattform som stödjer självständigt lärande och förbättrar studieförståelsen.
 
-
-
-
-
-Det ska även ingå en tekniskt beskrivning, där ni beskriver en eller flera tekniska lösningar i projektet. Ni skall beskriva funktionen av den tekniska lösningen och hur den används i projektet. Ju tydligare beskrivning desto enklare att bedöma den tekniska lösningen. Beskrivningen skall vara förståelig även för personer som inte kan programmera.
+Framtida mål inom projekten är att kunna implementera ett spel känsla där du tjänar på att besvara frågor och kan tävla inom olika kategorier.
 
 ### Externt producerade komponenter
 
-Här presenterar ni saker som ni har laddat ner och använt för att bygga ert arbete. Beskriv också i vilken utsträckning de behövs för projektet.
+Gemini-flash API
 
 ### Install
 
-Här skriver ni vad vi i juryn behöver göra för att kunna köra ert program / app / webbsida
-
+Ett AI models API Key, (vi har tillfäligt använt en av vår egna, så det borde fungera men är limiterad)
 

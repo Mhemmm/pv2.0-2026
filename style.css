@@ -1,3 +1,8 @@
+@font-face {
+    font-family: butterpop;
+    src: url("butterpop.zip\Butterpop.otf");
+}
+
 
 .ComingSoon img{
     height: 50%;
@@ -6,7 +11,7 @@
 
 #MainHub {
     background-color:#b9b9b9;
-    height: 80vh; 
+    height: 82vh; 
     width: 100%; 
     align-items: center;
 }
@@ -19,13 +24,16 @@
 }
 
 #MainHub footer{
+    font-family: butterpop;
+
     bottom: 0;
     position: fixed; 
 
 }
 
 #MainHub h1{
-    font-size: 15;
+    font-family: butterpop;
+
     padding-left: 40%;
 }
 
@@ -34,6 +42,19 @@
     padding-left: 40%;
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 #HUD {
