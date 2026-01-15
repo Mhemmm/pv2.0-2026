@@ -25,10 +25,10 @@
                         <div class="dropdown-menu">
                             <button class="close-btn">▲</button>
 
-                            <a href="subjects/matte.html">Matte</a>
-                            <a href="subjects/engelska.html">Engelska</a>
-                            <a href="subjects/svenska.html">Svenska</a>
-                            <a href="subjects/fysik.html">Fysik</a>
+                            <a href="matte.html">Matte</a>
+                            <a href="engelska.html">Engelska</a>
+                            <a href="svenska.html">Svenska</a>
+                            <a href="fysik.html">Fysik</a>
                         </div>
                     </li>
 
@@ -37,7 +37,33 @@
                     <li><a href="index.html"> <img src="https://www.svgrepo.com/show/376527/home-line.svg"></a></li>
                     <li class="active"><a href="library.html"><img src="https://cdn-icons-png.flaticon.com/512/29/29302.png"></a></li>
                     <li><a href="resources.html"><img src="https://icons.veryicon.com/png/o/miscellaneous/comprehensive-coarse-linear-icon-based-on-40/resources-213.png"></a></li>
-                    <li><a href="#"><img src="https://cdn-icons-png.flaticon.com/512/14/14558.png"></a></li>
+
+
+
+
+                    <li class="dropdown chat-dropdown">
+                        <a href="javascript:void(0)" class="chatdropdown-toggle">
+                            <img src="https://cdn-icons-png.flaticon.com/512/14/14558.png" alt="Chat">
+                        </a>
+
+                        <div class="chat-panel">
+                            <div class="chat-header">
+                                <span>AI Assistant</span>
+                                <button class="chatclose-btn">✕</button>
+                            </div>
+
+                            <div class="chat-messages" id="chatMessages">
+                                <!-- Messages will appear here -->
+                            </div>
+
+                            <div class="chat-input">
+                                <input type="text" id="chatInput" placeholder="Ask something..." />
+                                <button id="sendBtn">➤</button>
+                            </div>
+                        </div>
+                    </li>
+
+
                 </ul>
             </div>
 
@@ -64,10 +90,16 @@
 
                 <div class="dropdown-menu">
                     <button class="close-btn">▲</button>
-                    <a href="#Swedish">Svenska</a>
-                    <a href="#Maths">Matte</a>
-                    <a href="#Physics">Fysik</a>
+                    <a href="#" class="filter-option" data-theme="fantasy">Fantasy</a>
+                    <a href="#" class="filter-option" data-theme="fantasy">Fantasy</a>
+                    <a href="#" class="filter-option" data-theme="horror">Horror</a>
+                    <a href="#" class="filter-option" data-theme="adventure">Adventure</a>
+                    <a href="#" class="filter-option" data-theme="science">Science</a>
+                    <a href="#" class="filter-option" data-theme="all">All</a>
+
                 </div>
+
+
             </li>
 
             <li><p>Böcker</p></li>
@@ -77,33 +109,22 @@
             <li><p>Bokhyllan</p></li>
 
 
-            
         </ul>
-    </section>
 
+    </section>
 
     <section id="BookShelfDisplay">
-        hekko
-        <ul>
-            <li>
-                <div class="BookCardTemplate">
-                    <a href="https://inlasta.ilteducation.se/books/wIVGAiGVJvQSqDpM6Sv9T"><img src="https://content.global.prod.ilteducation.com/bookCovers/wIVGAiGVJvQSqDpM6Sv9T/cover.png" alt="bookbild"></a>
-                    <footer class="BookName">Vampyrspanarna</footer> <img src="https://www.citypng.com/public/uploads/small/11639609700adr8oezftyzrqr8lhzj8grcvyzlrje7f4pls6seuo32auctlnebpkieixy17191a21ybfkrry6yejsbevdah18of7mkxp8b8dpky.png" alt="addbookimage" class="addbutton">
-                </div>
-            </li>
-
-            <li>
-                <div class="BookCardTemplate">
-                    <a href="https://inlasta.ilteducation.se/books/wIVGAiGVJvQSqDpM6Sv9T"><img src="https://content.global.prod.ilteducation.com/bookCovers/wIVGAiGVJvQSqDpM6Sv9T/cover.png" alt="bookbild"></a>
-                    <footer class="BookName">Vampyrspanarna</footer> <img src="https://www.citypng.com/public/uploads/small/11639609700adr8oezftyzrqr8lhzj8grcvyzlrje7f4pls6seuo32auctlnebpkieixy17191a21ybfkrry6yejsbevdah18of7mkxp8b8dpky.png" alt="addbookimage" class="addbutton">
-                </div>
-            </li>
-
-
-        </ul>
+        <ul id="bookshelf"></ul>
     </section>
+
+
     
+
+    <script src="books.js"></script>
+
+
     <script src="subjectdropdown.js"></script>
+    <script src="chatdropdown.js"></script>
 
 </body>
 

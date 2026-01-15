@@ -1,44 +1,41 @@
-console.log("JS LOADED");
-console.log("Dropdowns found:", document.querySelectorAll(".dropdown"));
-
 document.addEventListener("DOMContentLoaded", () => {
 
-    const dropdowns = document.querySelectorAll(".dropdown");
-    console.log("Dropdowns found:", dropdowns);
-
-    dropdowns.forEach(dropdown => {
+    document.querySelectorAll(".dropdown").forEach(dropdown => {
         const toggle = dropdown.querySelector(".dropdown-toggle");
         const menu = dropdown.querySelector(".dropdown-menu");
         const closeBtn = dropdown.querySelector(".close-btn");
 
-        toggle.addEventListener("click", (e) => {
-            e.stopPropagation();
+        // SAFETY CHECK
+        if (!toggle || !menu) return;
 
-            dropdowns.forEach(d => {
-                if (d !== dropdown) {
-                    d.classList.remove("open");
-                    d.querySelector(".dropdown-menu").style.display = "none";
-                }
+        // Toggle dropdown
+        toggle.addEventListener("click", (e) => {
+            e.preventDefault();
+
+            // Close others
+            document.querySelectorAll(".dropdown-menu").forEach(other => {
+                if (other !== menu) other.style.display = "none";
             });
 
-            const isOpen = dropdown.classList.contains("open");
-
-            dropdown.classList.toggle("open", !isOpen);
-            menu.style.display = isOpen ? "none" : "block";
+            menu.style.display = menu.style.display === "block" ? "none" : "block";
         });
 
-        closeBtn.addEventListener("click", () => {
-            dropdown.classList.remove("open");
-            menu.style.display = "none";
-        });
+        // Close button ▲
+        if (closeBtn) {
+            closeBtn.addEventListener("click", () => {
+                menu.style.display = "none";
+            });
+        }
     });
 
-    document.addEventListener("click", () => {
-        dropdowns.forEach(dropdown => {
-            dropdown.classList.remove("open");
-            dropdown.querySelector(".dropdown-menu").style.display = "none";
+    // Click outside closes all
+    document.addEventListener("click", (e) => {
+        document.querySelectorAll(".dropdown").forEach(dropdown => {
+            if (!dropdown.contains(e.target)) {
+                const menu = dropdown.querySelector(".dropdown-menu");
+                if (menu) menu.style.display = "none";
+            }
         });
     });
 
 });
-

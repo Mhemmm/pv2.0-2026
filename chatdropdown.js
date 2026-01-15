@@ -1,9 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
 
     const chatDropdown = document.querySelector(".chat-dropdown");
-    const toggle = chatDropdown.querySelector(".dropdown-toggle");
+    const toggle = chatDropdown.querySelector(".chatdropdown-toggle");
     const panel = chatDropdown.querySelector(".chat-panel");
-    const closeBtn = chatDropdown.querySelector(".close-btn");
+    const closeBtn = chatDropdown.querySelector(".chatclose-btn");
 
     const input = document.getElementById("chatInput");
     const sendBtn = document.getElementById("sendBtn");

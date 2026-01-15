@@ -234,17 +234,9 @@
     margin-left: 8px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
+#locked {
+    opacity: 0.25;
+}
 
 
 
@@ -361,7 +353,25 @@
     height: 70vh; 
     width: 100%; 
     bottom: 0;
+    overflow-y: auto; /* enables vertical scrolling inside */ 
+    border-radius: 10px;
+
 }
+
+#BookShelfDisplay ul li {
+    padding: 0; /* grid handles spacing */
+}
+
+
+#BookShelfDisplay ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 40px;
+    padding: 40px;
+    list-style: none;
+    margin: 0;
+}
+
 
 .addbutton {
     height: 25px;
@@ -370,5 +380,26 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.SubjectLevel img{
+    height: 150px;
+    width: 150px;
+}
 
 
