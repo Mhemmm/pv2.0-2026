@@ -1,6 +1,6 @@
 @font-face {
     font-family: butterpop;
-    src: url("butterpop.zip\Butterpop.otf");
+    src: url("Butterpop.otf");
 }
 
 
@@ -33,13 +33,15 @@
 
 #MainHub h1{
     font-family: butterpop;
+    font-size: xxx-large;
 
     padding-left: 40%;
 }
 
 #MainHub header{
-    font-size: 15;
-    padding-left: 40%;
+    font-family: butterpop;
+    font-size: large;
+    padding-left: 45%;
 
 }
 
