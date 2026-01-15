@@ -403,3 +403,52 @@
 }
 
 
+
+.OptionsModes{
+    background-color: #c0c0c0;
+    
+}
+
+.OptionsModes ul li{
+    padding: 1%;
+}
+
+.OptionsModes img{
+    height: 50px;
+    width: 50px;
+}
+
+
+
+
+
+.DisplayBoard {
+    border-radius: 5px;
+    outline: 15px solid #c0c0c0;
+    background-color: #ffffff;
+    height: 75%; 
+    width: 65%; 
+    overflow-y: auto;
+
+    position: absolute; 
+    right: 100px; 
+    top: 100px;
+
+    /* This is the key: make it a positioning container */
+    position: absolute;
+}
+
+.DisplayBoard .querry {
+    position: absolute;
+    top: 10px;               /* small padding from top */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.DisplayBoard .user-input {
+    position: absolute;
+    bottom: 10px;            /* small padding from bottom */
+    left: 50%;
+    transform: translateX(-50%);
+}
+

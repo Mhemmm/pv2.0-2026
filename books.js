@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
     async function loadBooks() {
         try {
             const response = await fetch(
-                "https://openlibrary.org/search.json?q=fantasy&limit=20"
+                "https://openlibrary.org/search.json?q=fantasy&limit=100"
             );
             const data = await response.json();
 

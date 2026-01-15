@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Grid</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <section id="HUD">
+        <nav id="NavBar">
+            <div class="nav-inner">
+                <ul class="nav-left">
+
+                    <li class="active" class="dropdown">
+                        <a href="javascript:void(0)" class="dropdown-toggle">
+                            <img src="https://static.thenounproject.com/png/2471526-200.png" alt="Subjects">
+                        </a>
+
+                        <div class="dropdown-menu">
+                            <button class="close-btn">▲</button>
+
+                            <a href="matte.html">Matte</a>
+                            <a href="engelska.html">Engelska</a>
+                            <a href="svenska.html">Svenska</a>
+                            <a href="fysik.html">Fysik</a>
+                        </div>
+                    </li>
+
+                    <li><a href="statestic.html"><img src="https://icons.veryicon.com/png/o/miscellaneous/linear-icon-45/statistics-80.png"></a></li>
+                    <li><a href="leaderboard.html"><img src="https://cdn-icons-png.flaticon.com/512/8088/8088831.png"></a></li>
+                    <li><a href="index.html"><img src="https://www.svgrepo.com/show/376527/home-line.svg"></a></li>
+                    <li><a href="library.html"><img src="https://cdn-icons-png.flaticon.com/512/29/29302.png"></a></li>
+                    <li><a href="resources.html"><img src="https://icons.veryicon.com/png/o/miscellaneous/comprehensive-coarse-linear-icon-based-on-40/resources-213.png"></a></li>
+                    <li><img id="locked" src="https://cdn-icons-png.flaticon.com/512/14/14558.png" alt="Chat">
+
+                </ul>
+            </div>
+
+
+            <ul class="nav-right">
+                <li class="profile">M</li>
+                <li><a href="login.html"><img src="https://cdn-icons-png.flaticon.com/512/126/126467.png"></a></li>
+            </ul>
+
+        </nav>
+    </section>
+
+
+
+    <section class="SubjectLevel">
+        <li class="dropdown">
+
+            <a href="javascript:void(0)" class="dropdown-toggle">
+                <img src="https://png.pngtree.com/png-clipart/20221002/original/pngtree-vector-realistic-illustration-of-sweden-flags-png-image_8651377.png" alt="Matte">
+            </a>
+
+            <div class="dropdown-menu">
+                <button class="close-btn">▲</button>
+
+                    <a href="#">Svenska 1</a>
+                    <a href="#">Svenska 2</a>
+                    <a href="#">Svenska 3</a>
+            </div>
+        </li>
+    </section>
+
+    <section class="OptionsModes">
+        <ul>
+            <li><a href="PracticeMode"><img src="https://cdn-icons-png.flaticon.com/512/5930/5930147.png"></a></li>
+            <li><a href="WatchMode"><img src="https://cdn-icons-png.flaticon.com/512/68/68976.png"></a></li>
+            <li><a href="TasksMode"><img src="https://cdn-icons-png.flaticon.com/512/7394/7394592.png"></a></li>
+            <li><a href="AssesmentMode"><img src="https://www.pngrepo.com/download/229866/blackboard.png"></a></li>
+        </ul>
+
+    </section>
+
+    <section class="DisplayBoard">
+        <div class="querry" id="chat-querry">
+             <!-- questions will appear here -->
+              
+        </div>
+
+
+
+        <div class="user-input">
+            <input type="text" id="chatInput" placeholder="svar :" />
+             <button id="sendAnswerBtn">➤</button>
+             <button id="Next">Next➤</button>
+        </div>
+    </section>
+
+
+    
+    <script src="subjectdropdown.js"></script>
+</body>
+
+</html>
