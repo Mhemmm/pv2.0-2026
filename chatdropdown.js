@@ -1,7 +1,7 @@
 import { GoogleGenAI } from "https://esm.run/@google/genai";
 
 const ai = new GoogleGenAI({
-  apiKey: "AIzaSyBNZJyzr9JU6PVE7XDsqoW9JoFXJwY00UE"
+  apiKey: "AIzaSyAajcvdetl5_RnB8vHIjHNV6tHWq0hCE9k"
 });
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -46,19 +46,23 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const prompt = "Använd endast vanlig text (inga $ eller LaTeX). " + text;
 
-    // Nu utan try/catch
-    const output = await ai.models.generateContent({
-      model: "gemini-3-flash-preview",
-      contents: [{ type: "text", text: prompt }]
-    });
+    try {
+      const output = await ai.models.generateContent({
+        model: "gemini-3-flash-preview",
+        contents: [{ type: "text", text: prompt }]
+      });
 
-    const answer =
-      output.text ||
-      output.output_text ||
-      output.candidates?.[0]?.content?.[0]?.text ||
-      "Inget svar";
+      const answer =
+        output.text ||
+        output.output_text ||
+        output.candidates?.[0]?.content?.[0]?.text ||
+        "Inget svar";
 
-    addMessage(answer, "bot");
+      addMessage(answer, "bot");
+
+    } catch (err) {
+      addMessage("Fel: kunde inte kontakta AI", "bot");
+    }
   }
 
   function addMessage(text, type) {
