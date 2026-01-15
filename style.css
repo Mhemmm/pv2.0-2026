@@ -1,4 +1,41 @@
 
+.ComingSoon img{
+    height: 50%;
+    width: 50%;
+}
+
+#MainHub {
+    background-color:#b9b9b9;
+    height: 80vh; 
+    width: 100%; 
+    align-items: center;
+}
+
+
+#MainHub img{
+    height: 50%;
+    width: 100%;
+    bottom: 0;
+}
+
+#MainHub footer{
+    bottom: 0;
+    position: fixed; 
+
+}
+
+#MainHub h1{
+    font-size: 15;
+    padding-left: 40%;
+}
+
+#MainHub header{
+    font-size: 15;
+    padding-left: 40%;
+
+}
+
+
 #HUD {
     background: #dcdcdc;
     position: sticky;
